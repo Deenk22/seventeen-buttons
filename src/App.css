@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #494949;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 2em;
+}
+
+.general-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 2em;
+  padding: 2em 0;
+  border: none;
+}
+
+
+
+/* --- Button --- 01 */
+.button-one {
+  color: #dedede;
+  background-color: #518691;
+  transition: 0.2s;
+}
+
+.button-one:hover {
+  background-color: #a95872;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  transform: translateY(-4px);
+  box-shadow: 0.5em 0.5em 0em 0em rgba(141, 143, 128, 0.2);
+}
+
+
+
+/* --- Button --- 02 */
+.button-two {
+  color: #dedede;
+  background-color: #2e484e;
+  transition: 0.2s;
+}
+
+.button-two:hover {
+  background-color: #794b59;
+  transform: translateX(4px);
+  box-shadow: 1em 0em 0em 0em rgba(141, 143, 128, 0.2);
+}
+
+.button-two:active {
+  transition: 0.1s;
+  box-shadow: 0em 0em 0em 0em rgba(141, 143, 128, 0.2);
+}
+
+
+
+/* --- Button --- 03 */
+.button-three {
+  color: #dedede;
+  background-color: #2e484e;
+  border-radius: 1em;
+  transition: 0.1s;
+}
+
+.button-three:hover {
+  transform: rotateX(30deg) translateY(-4px);
+  box-shadow: 0em 1.5em 0em 0em #1f1c1c;
+}
+
+.button-three:active {
+  transform: translateY(0px);
+  box-shadow: 0em 0em 0em 0em #1f1c1c, 0em 0.5em 0em 0.2em #1f1c1ca1 inset;
+}
+
+
+
+/* --- Button --- 04 */
+.button-four {
+  color: #dedede;
+  background-color: #2e484e;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  transition: 0.2s;
+}
+
+.button-four:hover {
+  border-bottom-right-radius: 2em;
+  box-shadow: 0em 1em 0em 0em #1f1c1c;
+}
+
+.button-four:active {
+  transition: 0.1s;
+  box-shadow: 0em 0em 0em 0em #1f1c1c;
+  opacity: 0.8;
+}
+
+
+
+/* --- Button --- 05 */
+.button-five{
+  background-color: #794b59;
+  transition: 0.2s;
+}
+
+.button-five:hover{
+  transform: scale3d(1.2, 1.2, 2) rotate3d(0, 0.2, 0.2, 0.50rad) ;
+}
+
