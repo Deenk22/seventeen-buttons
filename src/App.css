@@ -1,16 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: #494949;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #191818;
 }
 
-.div-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  gap: 2em;
+@layer components {
+    .typographyResponsive {
+      @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[10rem] 2xl:text-[12rem]
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #121212;
 }
 
 .general-btn {
@@ -23,22 +27,86 @@
   border: none;
 }
 
+/* Letter FX */
+.letter-e {
+  display: inline-block;
+  color: #93A5CF;
+  opacity: 0;
+  animation: letter-animation 8s infinite;
+}
+
+/* first-of-type > Al hacer hover en el h1 / esta clase actuará sobre el primer elemento que contenga la clase letter-e */
+/* h1:hover .letter-e:first-of-type {
+} */
+
+@keyframes letter-animation {
+
+  0%,
+  100% {
+    opacity: 0.5;
+    color: #93A5CF;
+  }
+
+  25% {
+    opacity: 1;
+    color: #2e484e;
+  }
+
+  50% {
+    opacity: 0.5;
+    color: #93A5CF;
+  }
+
+  75% {
+    opacity: 1;
+    color: #51788a;
+  }
+}
+
+/* Icono SVG Header */
+.svg {
+  opacity: 0;
+  animation: icon-movement 2s ease-in-out infinite;  
+}
+
+@keyframes icon-movement {
+  0%,100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    opacity: 0;
+    transform: rotate(180deg) scale(0.8);
+    color: #367588;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
 
 
 /* --- Button --- 01 */
 .button-one {
-  color: #dedede;
-  background-color: #518691;
-  transition: 0.2s;
+  color: rgb(15, 33, 56);
+  transition: 0.1s;
 }
 
 .button-one:hover {
-  background-color: #a95872;
+  color: #E4EfE9;
+  background-color: rgb(15, 33, 56);
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
+  box-shadow: 0.5em 0.5em 0em 0em rgb(243, 245, 249, 0.8);
   transform: translateY(-4px);
-  box-shadow: 0.5em 0.5em 0em 0em rgba(141, 143, 128, 0.2);
+}
+
+.button-one:active{
+  box-shadow: 0em 0em 0em 0em rgb(243, 245, 249, 0.2);
 }
 
 
@@ -115,3 +183,22 @@
   transform: scale3d(1.2, 1.2, 2) rotate3d(0, 0.2, 0.2, 0.50rad) ;
 }
 
+
+
+/* .animation-operation-cards {
+  animation: fadeMovement linear both;
+  animation-timeline: view();
+  animation-range: entry 5% cover 24%;
+}
+
+@keyframes fadeMovement {
+  from {
+    opacity: 0;
+    transform: translateX(-128px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+} */

@@ -1,10 +1,21 @@
-import {Buttons, Home} from "../sections/sections";
+import {
+  ButtonOne,
+  ButtonTwo,
+  ButtonThree,
+  ButtonFour,
+  ButtonFive,
+  Home,
+} from "../sections/sections";
 
 export default function HomePage() {
   return (
-    <>
+    <div>
       <Home />
-      <Buttons />
-    </>
+      <ButtonOne />
+      <ButtonTwo />
+      <ButtonThree />
+      <ButtonFour />
+      <ButtonFive />
+    </div>
   );
 }
