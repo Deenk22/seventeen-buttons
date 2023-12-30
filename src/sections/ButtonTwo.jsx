@@ -9,7 +9,7 @@ export default function ButtonTwo() {
             id="buttontwo"
             type="button"
             value={"button02"}
-            className="general-btn button-two"
+            className="general-btn button-two bg-light-blue text-light-blue-two"
           >
             Click Me
           </button>

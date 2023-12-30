@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #191818;
-}
+
+/* TODO: Ajustar paleta de colores. Crearemos 3 tonos para toda la aplicación. */
+/* TODO: Organizar CSS. */
 
 @layer components {
     .typographyResponsive {
@@ -14,7 +14,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-  background: #121212;
 }
 
 .general-btn {
@@ -22,9 +21,8 @@ html {
   justify-content: center;
   align-items: center;
   width: 10em;
-  height: 2em;
+  height: 1em;
   padding: 2em 0;
-  border: none;
 }
 
 /* Letter FX */
@@ -91,13 +89,11 @@ html {
 
 /* --- Button --- 01 */
 .button-one {
-  color: rgb(15, 33, 56);
   transition: 0.1s;
 }
 
 .button-one:hover {
-  color: #E4EfE9;
-  background-color: rgb(15, 33, 56);
+  background-color: #2e484e;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
@@ -113,15 +109,17 @@ html {
 
 /* --- Button --- 02 */
 .button-two {
-  color: #dedede;
-  background-color: #2e484e;
+  color: #E4EfE9;
   transition: 0.2s;
 }
 
 .button-two:hover {
+  color: #E4EfE9;
   background-color: #794b59;
-  transform: translateX(4px);
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
   box-shadow: 1em 0em 0em 0em rgba(141, 143, 128, 0.2);
+  transform: translateX(4px);
 }
 
 .button-two:active {
