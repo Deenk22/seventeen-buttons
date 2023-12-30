@@ -15,7 +15,6 @@ export default function Home() {
           href="#button-one"
           className="font-secondary text-lg text-light-blue"
         >
-          Explorar
           <div className="flex justify-center">
             <img
               className="svg"

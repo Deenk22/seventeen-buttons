@@ -65,8 +65,8 @@ html {
 
 /* Icono SVG Header */
 .svg {
-  opacity: 0;
-  animation: icon-movement 2s ease-in-out infinite;  
+  opacity: 1;
+  /* animation: icon-movement 2s ease-in-out infinite;   */
 }
 
 @keyframes icon-movement {
@@ -140,7 +140,7 @@ html {
 }
 
 .button-three:hover {
-  transform: rotateX(30deg) translateY(-4px);
+  transform: rotateX(30deg) translateY(-2px);
   box-shadow: 0em 1.5em 0em 0em #1f1c1c;
 }
 
