@@ -33,6 +33,8 @@ html {
   animation: letter-animation 8s infinite;
 }
 
+
+/* Dato de interés; */
 /* first-of-type > Al hacer hover en el h1 / esta clase actuará sobre el primer elemento que contenga la clase letter-e */
 /* h1:hover .letter-e:first-of-type {
 } */
@@ -61,43 +63,21 @@ html {
   }
 }
 
-/* Icono SVG Header */
-.svg {
-  opacity: 1;
-  /* animation: icon-movement 2s ease-in-out infinite;   */
-}
 
-@keyframes icon-movement {
-  0%,100% {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
-  }
-
-  50% {
-    opacity: 0;
-    transform: rotate(180deg) scale(0.8);
-    color: #367588;
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotate(360deg) scale(1);
-  }
-}
-
-
-
-/* --- Button --- 01 */
+/* --- BUTTON --- 01 */
 .button-one {
+  color: #93A5CF;
+  background-color: #E4EfE9;
   transition: 0.1s;
 }
 
 .button-one:hover {
-  background-color: #2e484e;
+  color: #E4EfE9;
+  background-color: #253031c4;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
-  box-shadow: 0.5em 0.5em 0em 0em rgb(243, 245, 249, 0.8);
+  box-shadow: 0.5em 0.5em 0em 0em rgba(228, 239, 233, 1);
   transform: translateY(-4px);
 }
 
@@ -106,8 +86,7 @@ html {
 }
 
 
-
-/* --- Button --- 02 */
+/* --- BUTTON --- 02 */
 .button-two {
   color: #E4EfE9;
   transition: 0.2s;
@@ -115,7 +94,7 @@ html {
 
 .button-two:hover {
   color: #E4EfE9;
-  background-color: #794b59;
+  background-color: #253031c4;
   border-bottom-left-radius: 16px;
   border-top-left-radius: 16px;
   box-shadow: 1em 0em 0em 0em rgba(141, 143, 128, 0.2);
@@ -123,10 +102,8 @@ html {
 }
 
 .button-two:active {
-  transition: 0.1s;
   box-shadow: 0em 0em 0em 0em rgba(141, 143, 128, 0.2);
 }
-
 
 
 /* --- Button --- 03 */
@@ -138,18 +115,17 @@ html {
 }
 
 .button-three:hover {
-  transform: rotateX(30deg) translateY(-2px);
+  transform: rotateX(30deg) translateY(-4px);
   box-shadow: 0em 1.5em 0em 0em #1f1c1c;
 }
 
 .button-three:active {
-  transform: translateY(0px);
+  transform: rotateX(0deg) translateY(0px);
   box-shadow: 0em 0em 0em 0em #1f1c1c, 0em 0.5em 0em 0.2em #1f1c1ca1 inset;
 }
 
 
-
-/* --- Button --- 04 */
+/* --- BUTTON --- 04 */
 .button-four {
   color: #dedede;
   background-color: #2e484e;
@@ -171,7 +147,7 @@ html {
 
 
 
-/* --- Button --- 05 */
+/* --- BUTTON --- 05 */
 .button-five{
   background-color: #794b59;
   transition: 0.2s;
@@ -181,22 +157,3 @@ html {
   transform: scale3d(1.2, 1.2, 2) rotate3d(0, 0.2, 0.2, 0.50rad) ;
 }
 
-
-
-/* .animation-operation-cards {
-  animation: fadeMovement linear both;
-  animation-timeline: view();
-  animation-range: entry 5% cover 24%;
-}
-
-@keyframes fadeMovement {
-  from {
-    opacity: 0;
-    transform: translateX(-128px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0px);
-  }
-} */
