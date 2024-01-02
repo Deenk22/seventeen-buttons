@@ -1,3 +1,5 @@
+import ButtonSeven from "../sections/ButtonSeven";
+import ButtonSix from "../sections/ButtonSix";
 import {
   ButtonOne,
   ButtonTwo,
@@ -16,6 +18,8 @@ export default function HomePage() {
       <ButtonThree />
       <ButtonFour />
       <ButtonFive />
+      <ButtonSix />
+      <ButtonSeven />
     </div>
   );
 }

@@ -7,9 +7,14 @@
 /* TODO: Organizar CSS. */
 
 @layer components {
-    .typographyResponsive {
-      @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[10rem] 2xl:text-[12rem]
+  .typographyResponsive {
+    @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[10rem] 2xl:text-[12rem]
+}
+
+  .wrapper-div {
+    @apply flex flex-col justify-center items-center gap-24 h-screen
   }
+
 }
 
 html {
@@ -70,7 +75,6 @@ html {
   background-color: #E4EfE9;
   transition: 0.1s;
 }
-
 .button-one:hover {
   color: #E4EfE9;
   background-color: #253031c4;
@@ -80,7 +84,6 @@ html {
   box-shadow: 0.5em 0.5em 0em 0em rgba(228, 239, 233, 1);
   transform: translateY(-4px);
 }
-
 .button-one:active{
   box-shadow: 0em 0em 0em 0em rgb(243, 245, 249, 0.2);
 }
@@ -89,71 +92,120 @@ html {
 /* --- BUTTON --- 02 */
 .button-two {
   color: #E4EfE9;
+  background-color: #93A5CF;
   transition: 0.2s;
 }
-
 .button-two:hover {
   color: #E4EfE9;
-  background-color: #253031c4;
   border-bottom-left-radius: 16px;
   border-top-left-radius: 16px;
   box-shadow: 1em 0em 0em 0em rgba(141, 143, 128, 0.2);
   transform: translateX(4px);
 }
-
 .button-two:active {
   box-shadow: 0em 0em 0em 0em rgba(141, 143, 128, 0.2);
 }
 
 
-/* --- Button --- 03 */
+/* --- BUTTON --- 03 */
 .button-three {
-  color: #dedede;
-  background-color: #2e484e;
-  border-radius: 1em;
+  color: #93A5CF;
+  background-color: #E4EfE9;
   transition: 0.1s;
 }
-
 .button-three:hover {
-  transform: rotateX(30deg) translateY(-4px);
-  box-shadow: 0em 1.5em 0em 0em #1f1c1c;
+  transform: rotateX(25deg) translateY(-4px);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0em 1.5em 0em 0em #253031c4;
 }
-
 .button-three:active {
-  transform: rotateX(0deg) translateY(0px);
-  box-shadow: 0em 0em 0em 0em #1f1c1c, 0em 0.5em 0em 0.2em #1f1c1ca1 inset;
+  transform: rotateX(0deg) translateY(8px);
+  box-shadow: 0em 0em 0em 0em #253031c4, 0em 0.4em 0em 0.2em #253031c4 inset;
 }
 
 
 /* --- BUTTON --- 04 */
 .button-four {
-  color: #dedede;
-  background-color: #2e484e;
-  border-top-right-radius: 2em;
-  border-top-left-radius: 2em;
+  color: #222;
+  border-top-left-radius: 16px;
+  background-color: #fcfcfd;
   transition: 0.2s;
 }
 
 .button-four:hover {
-  border-bottom-right-radius: 2em;
-  box-shadow: 0em 1em 0em 0em #1f1c1c;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 16px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 8px 4px 0px,
+    rgba(45, 35, 66, 0.3) 0 8px 16px -4px, #d6d6e7 0 -4px 4px inset;
 }
 
 .button-four:active {
-  transition: 0.1s;
-  box-shadow: 0em 0em 0em 0em #1f1c1c;
-  opacity: 0.8;
+  box-shadow: #75757c 2px 2px 4px 1px inset;
 }
-
 
 
 /* --- BUTTON --- 05 */
-.button-five{
-  background-color: #794b59;
-  transition: 0.2s;
+.button-five {
+  color: #222;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  background-color: #dedeed;
+  transition: 0.1s;
 }
 
-.button-five:hover{
-  transform: scale3d(1.2, 1.2, 2) rotate3d(0, 0.2, 0.2, 0.50rad) ;
+.button-five:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transform: translateY(-4px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 8px 4px 0px,
+    rgba(45, 35, 66, 0.3) 0 8px 16px -4px, #d6d6e7 0 -4px 0 inset;
+}
+
+.button-five:active {
+  transform: translateY(0px);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 0px 0px,
+    rgba(45, 35, 66, 0.3) 0 8px 0px -4px, #d6d6e7 0 -4px 0 inset;
+}
+
+
+/* --- BUTTON --- 06 */
+.button-six {
+  color: #222;
+  border-radius: 8px;
+  background-color: #dedeed;
+  box-shadow: rgba(45, 35, 66, 0.4) 12px -8px 12px 0px,
+    rgba(115, 89, 172, 0.4) -12px 8px 12px 0px;
+  border: 1px solid #2222225b;
+  transition: 0.1s;
+}
+
+.button-six:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 8px 4px 0px,
+    rgba(115, 89, 172, 0.4) 0px 12px 4px 0px;
+  transform: translateY(-4px);
+}
+
+.button-six:active {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 2px 0px;
+  transform: translateY(0px);
+}
+
+
+/* --- BUTTON --- 07 */
+.button-seven {
+  padding: 16px 16px;
+  transition: 0.1s;
+}
+
+.button-seven:hover {
+  box-shadow: 0px 0px 0px 6px;
+  border-radius: 4px;
+  transform: translateY(-4px);
+}
+
+.button-seven:active {
+  transform: translateY(0px);
+  box-shadow: 0px 0px 0px 3px;
 }
 
