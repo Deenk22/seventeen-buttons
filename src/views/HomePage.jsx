@@ -8,6 +8,7 @@ import {
   ButtonFive,
   Home,
 } from "../sections/sections";
+// Crear archivo js ("sections") para mejorar la importación de los botones.
 
 export default function HomePage() {
   return (

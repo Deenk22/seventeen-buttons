@@ -10,11 +10,9 @@
   .typographyResponsive {
     @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[10rem] 2xl:text-[12rem]
 }
-
   .wrapper-div {
-    @apply flex flex-col justify-center items-center gap-24 h-screen
+    @apply flex flex-col lg:flex-row justify-evenly lg:justify-between items-center gap-4 h-screen mx-0 lg:mx-20 xl:mx-32
   }
-
 }
 
 html {
@@ -208,4 +206,8 @@ html {
   transform: translateY(0px);
   box-shadow: 0px 0px 0px 3px;
 }
+
+
+
+
 
